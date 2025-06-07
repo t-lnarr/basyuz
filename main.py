@@ -13,7 +13,7 @@ model = genai.GenerativeModel(model_name="models/gemini-1.5-flash")
 ISLETME_BILGI = """
 Sen bir pastanenin AI asistanısın. İşletme bilgileri:
 
-Adı: Güneş Pastanesi
+Adı: Mars Pastanesi
 Adres: Türkmenbaşy cad. 12/A, Aşkabat
 Telefon: +993 65 12 34 56
 Çalışma saatleri: 09:00 - 21:00
