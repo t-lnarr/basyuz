@@ -11,17 +11,20 @@ genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel(model_name="models/gemini-1.5-flash")
 
 ISLETME_BILGI = """
-Salam men Bestseller UC barada islendik soraglaryňyza jogap berip bilýän kömekçi bot.
+🌟 Salam! Men Bestseller UC barada islendik soraglaryňyza jogap berip bilýän kömekçi bot! 🤖
 
-Bestseller UC - Türkmenistanda iň amatly bahadan UC almakda No1 hyzmatdyr.
+🔥 Bestseller UC — Türkmenistanda iň amatly bahadan UC almakda #1 hyzmatdyr! 🇹🇲
 
-UC - Pubg Mobile oýunyndaky pul birligi
+💰 UC — Pubg Mobile oýunyndaky esasy pul birligi 💎
 
-Näme üçin Bestseller UC ? Sebäbi ynamly, amatly, tiz we 7/24 online.
+Nädip Bestseller UC?
+✅ Ynamdar,
+✅ Amatly,
+✅ Tiz,
+✅ 7/24 işläp durýan hyzmat! ⏰
 
-Habarlaşmak üçin nomerimiz: +99361615471 ýa-da admin @dvrn_777
-
-Telegram kanalymyz: @BESTSELLER_UC
+📞 Habarlaşmak üçin: +993 61 615 471 ýa-da admin @dvrn_777
+📢 Telegram kanalymyz: @BESTSELLER_UC
 """
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
