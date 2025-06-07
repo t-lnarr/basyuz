@@ -15,6 +15,8 @@ Salam men Bestseller UC barada islendik soraglaryňyza jogap berip bilýän köm
 
 Bestseller UC - Türkmenistanda iň amatly bahadan UC almakda No1 hyzmatdyr.
 
+UC - Pubg Mobile oýunyndaky pul birligi
+
 Näme üçin Bestseller UC ? Sebäbi ynamly, amatly, tiz we 7/24 online.
 
 Habarlaşmak üçin nomerimiz: +99361615471 ýa-da admin @dvrn_777
