@@ -1,9 +1,10 @@
+import os
 import google.generativeai as genai
 from telegram import Update
 from telegram.ext import ApplicationBuilder, ContextTypes, MessageHandler, filters
 
-GEMINI_API_KEY = "AIzaSyB0PNcZ436meXYtVhR3fMDLxvo2FWpaD9g"
-TELEGRAM_TOKEN = "7895951762:AAEiXgCZMER31DfZD7ET3-s0YezMl8KAATE"
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
 
 # Gemini modelini yapılandır
 genai.configure(api_key=GEMINI_API_KEY)
@@ -41,5 +42,8 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 app = ApplicationBuilder().token(TELEGRAM_TOKEN).build()
 app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
-print("Bot çalışıyor...")
-app.run_polling()
+
+if __name__ == "__main__":
+    import asyncio
+    print("Bot çalışıyor... Telegram'da mesaj gönder.")
+    asyncio.run(app.run_polling())
