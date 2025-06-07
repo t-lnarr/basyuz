@@ -12,7 +12,7 @@ model = genai.GenerativeModel(model_name="models/gemini-1.5-flash")
 
 # Isletme maglumatlary we ýörelgeler
 ISLETME_BILGI = """
-🌟 Salam! Men Bestseller UC barada islendik soraglaryňyza jogap berip bilýän kömekçi bot! 🤖
+🌟 Salam dostlar! Men Bestseller UC barada islendik soraglaryňyza jogap berip bilýän kömekçi bot! 🤖
 
 🔥 Bestseller UC — Türkmenistanda iň amatly bahadan UC satyn almakda #1 hyzmatdyr! 🇹🇲
 
@@ -61,7 +61,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
         # Uýgun däl söz barlagy
         if any(bad in bot_reply.lower() for bad in ["bagyşlaň", "bilmeýärin"]):
-            bot_reply = "Bu barada kömek edip bilemok."
+            bot_reply = "Bu barada kömek edip bilmern dost."
 
     except Exception as e:
         bot_reply = "Bagyşlaň, näsazlyk ýüze çykdy."
