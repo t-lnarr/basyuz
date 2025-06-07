@@ -28,7 +28,13 @@ Nädip Bestseller UC?
 """
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    user_message = update.message.text
+    # Grup/süpergrup içindeyse bot mention olmalı, yoksa cevap verme
+    if update.message.chat.type in ['group', 'supergroup']:
+        if not context.bot.username.lower() in update.message.text.lower():
+            return  # Bot ismi yoksa çık
+
+    # Bot adını temizle, sadece mesajı al
+    user_message = update.message.text.replace(f"@{context.bot.username}", "").strip()
 
     try:
         full_prompt = ISLETME_BILGI + "\n\nMüşteri sorusu:\n" + user_message
