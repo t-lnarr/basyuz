@@ -10,7 +10,6 @@ TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
 genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel(model_name="models/gemini-1.5-flash")
 
-# Sabit işletme bilgisi
 ISLETME_BILGI = """
 Sen bir pastanenin AI asistanısın. İşletme bilgileri:
 
@@ -25,7 +24,6 @@ Instagram: @gunespastanesi
 - Ballı tort (30 TMT)
 - Çilekli pasta (35 TMT)
 
-Sipariş alınmaz ama bilgi verilir.
 """
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
