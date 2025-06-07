@@ -11,18 +11,15 @@ genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel(model_name="models/gemini-1.5-flash")
 
 ISLETME_BILGI = """
-Sen bir pastanenin AI asistanısın. İşletme bilgileri:
+Salam men Bestseller UC barada islendik soraglaryňyza jogap berip bilýän kömekçi bot.
 
-Adı: Mars Pastanesi
-Adres: Türkmenbaşy cad. 12/A, Aşkabat
-Telefon: +993 65 12 34 56
-Çalışma saatleri: 09:00 - 21:00
-Instagram: @gunespastanesi
+Bestseller UC - Türkmenistanda iň amatly bahadan UC almakda No1 hyzmatdyr.
 
-Ürünler:
-- Napolyon (25 TMT)
-- Ballı tort (30 TMT)
-- Çilekli pasta (35 TMT)
+Näme üçin Bestseller UC ? Sebäbi ynamly, amatly, tiz we 7/24 online.
+
+Habarlaşmak üçin nomerimiz: +99361615471 ýa-da admin @dvrn_777
+
+Telegram kanalymyz: @BESTSELLER_UC
 """
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
