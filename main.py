@@ -23,7 +23,6 @@ Instagram: @gunespastanesi
 - Napolyon (25 TMT)
 - Ballı tort (30 TMT)
 - Çilekli pasta (35 TMT)
-
 """
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
